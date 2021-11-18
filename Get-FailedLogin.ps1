@@ -81,10 +81,10 @@ $password = "AFDHSKJ@#%$(Y@)UJGA SD:KN!@#%$(Y)U"
 $sstr = ConvertTo-SecureString -string $password -AsPlainText -Force
 $cred = New-Object System.Management.Automation.PSCredential -argumentlist $username, $sstr
 $Attachment = 'C:\temp\ADUserBadPasswords' + $date + '.csv'
-$body = "<h1> OSAA-IT Failed Login Report</h1><br><br>"
+$body = "<h1> IT Failed Login Report</h1><br><br>"
 $body += "Attached is a queried list of failed login attemps for the last two days.<br>"
 $body += "<br><br><br><br><br><br><br>"
-$body += 'This automation was created and is maintained by Alan Newingham.<br>'
+$body += '<br>'
 $body += 'Should you find the automation is failing in any way please let me know at <a href = "mailto: user1@constoso.com">user1@constoso.com</a><br>'
 $body += "<br><br><br><br><br><br><br>"
 $body += "Report Ran: $date"
